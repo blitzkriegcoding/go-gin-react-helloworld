@@ -3,24 +3,22 @@ package main
 import (
 	"github.com/gin-gonic/contrib/static"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 func main() {
-	// Set the router as the default one shipped with Gin
+	// Default Gin router
 	router := gin.Default()
 
-	// Serve the frontend
+	// Serve the frontend via views folder
 	router.Use(static.Serve("/", static.LocalFile("./views", true)))
 
-	api := router.Group("/api")
-	{
-		api.GET("/", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"message": "pong",
-			})
+	// Setup homepage route
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
 		})
-	}
-	// Start the app
-	router.Run(":3002")
+	})
+
+	// Start the app via localhost
+	router.Run(":3012")
 }
