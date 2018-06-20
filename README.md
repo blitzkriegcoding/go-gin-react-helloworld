@@ -1,8 +1,8 @@
 # go-gin-react
-Hello World web app created with Golang + Gin + React
+Hello World web app created with Golang + Gin & React + Bootstrap
 
 #### What?
-This is a basic "Hello World" web application that uses Golang + Gin to serve a web page created with React using a .jsx file
+This is a basic "Hello World" web application that demonstrates a basic example of a web application using Golang + Gin & React + Bootstrap. Golang acts as the server and Gin is used to create the routes needed to serve the web page. React is used as the front-end technology, via a .jsx file, and is styled using Bootstrap via inline html within the index.html file. Working together they create a basic "Hello World" template for making web pages with React and hosting them with Golang.
 
 #### How to use
 
