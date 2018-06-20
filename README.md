@@ -1,4 +1,4 @@
-# go-gin-react
+# go-gin-react-helloworld
 Hello World web app created with Golang + Gin & React + Bootstrap
 
 #### What?
